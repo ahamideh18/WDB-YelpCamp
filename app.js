@@ -31,7 +31,7 @@ app.use(flash())
     //dseedDB();
 
 app.use(require("express-session")({ //client-sessions is an alternative
-    secret: "BRON is GOAT",
+    secret: `${process.env.SECRET}`,
     resave: false,
     saveUninitialized: false
 }));
