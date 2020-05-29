@@ -1,11 +1,39 @@
-.thumbnail img {
-    width: 100%
-}
-
-.thumbnail {
-    padding: 0;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Reem+Kufi&display=swap');
 .deleteForm {
     display: inline;
+}
+
+#header {
+    background: url(../images/stars.jpg);
+    background-size: cover;
+}
+
+textarea {
+    width: 100%;
+    height: 30vh;
+    resize: none;
+    border-radius: 5px;
+}
+
+@font-face {
+    font-family: 'baseballCursive';
+    src: url('../Fonts/avebetwanpersonaluseonly-06yg-webfont.woff')format('woff'), url('../Fonts/avebetwanpersonaluseonly-06yg-webfont.woff2')format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar-brand {
+    font-family: 'baseballCursive' !important;
+    font-weight: normal;
+    font-style: normal;
+}
+
+#yelpTitle {
+    font-family: 'baseballCursive' !important;
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
 }

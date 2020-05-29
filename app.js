@@ -22,7 +22,7 @@ const password = process.env.PASS
 const connectionString = `mongodb+srv://aham:${password}@cluster1-z384d.azure.mongodb.net/test?retryWrites=true&w=majority`
 mongoose.set('useUnifiedTopology', true);
 mongoose.set('useFindAndModify', false);
-mongoose.connect( /*"mongodb://localhost/yelp_camp"*/ connectionString, { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost/yelp_camp" /*connectionString*/ , { useNewUrlParser: true });
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
