@@ -19,10 +19,10 @@ var commentRoutes = require("./routes/comments"),
     authRoutes = require("./routes/index")
 
 const password = process.env.PASS
-const connectionString = `mongodb+srv://aham:${password}@main-cluster-zlfxa.azure.mongodb.net/test?retryWrites=true&w=majority`;
+const connectionString = `mongodb+srv://aham:${password}@main-cluster-zlfxa.azure.mongodb.net/yelp_camp?retryWrites=true&w=majority`;
 mongoose.set('useUnifiedTopology', true);
 mongoose.set('useFindAndModify', false);
-mongoose.connect(connectionString, { useNewUrlParser: true }); //Replace with /*"mongodb://localhost/yelp_camp"*/ for local hosting
+mongoose.connect(connectionString, { useNewUrlParser: true }); //Replace with "mongodb://localhost/yelp_camp" for local hosting
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
